@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/oval_style"
+        android:onClick="sendPost"
+        android:text="@string/send"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountField"/>
+
+    <TextView
+        android:id="@+id/amountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/amount_text"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/amountField"
+        app:layout_constraintRight_toLeftOf="@+id/amountField" />
+
+    <EditText
+        android:id="@+id/typeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_style"
+        android:ems="7"
+        android:gravity="center_horizontal"
+        android:hint="@string/type_hint"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/ipField"
+        app:layout_constraintTop_toBottomOf="@+id/cameraButton" />
+
+    <EditText
+        android:id="@+id/amountField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_style"
+        android:ems="3"
+        android:gravity="center_horizontal"
+        android:hint="@string/amount_hint"
+        android:inputType="text"
+        android:text="@string/default_amount"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/ipField"
+        app:layout_constraintTop_toBottomOf="@+id/typeField" />
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/type_text"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/typeField"
+        app:layout_constraintEnd_toStartOf="@+id/typeField" />
+
+
+    <EditText
+        android:id="@+id/ipField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_style"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:hint="@string/ip_hint"
+        android:inputType="text"
+        android:text="@string/default_ip"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/ipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ip_text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ipField"
+        app:layout_constraintEnd_toStartOf="@+id/ipField"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:text="@string/text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ipField"
+        app:layout_constraintTop_toBottomOf="@+id/ipField"
+        app:srcCompat="@drawable/barcode_scanner_4249"
+        android:background="@drawable/border_style"
+
+        />
+
+    <!--
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/run_camera"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

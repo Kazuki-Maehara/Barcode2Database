@@ -1,0 +1,23 @@
+<resources>
+
+    // for activity_main.xml
+    <string name="app_name">Bar2DB</string>
+    <string name="text">Press the button below to insert data to `iot_test` database.</string>
+    <string name="send">Send</string>
+    <string name="default_ip">/*IP ADDRESS TO YOUR HTML SERVER*/</string>
+    <string name="default_amount">1</string>
+    <string name="sending">Sending!</string>
+    <string name="ip_text">IP:</string>
+    <string name="type_text">Type:</string>
+    <string name="amount_text">Amount:</string>
+    <string name="ip_hint">192.168.xxx.xxx</string>
+    <string name="type_hint">**NoData**</string>
+    <string name="amount_hint">0</string>
+    <string name="complete">Sending complete! You can send data how much you like.</string>
+
+    // for activity_camera.xml
+    <string name="run_camera">Run Camera</string>
+    <string name="hello">Hello!</string>
+    <string name="scanning">Barcode Scanning</string>
+
+</resources>
