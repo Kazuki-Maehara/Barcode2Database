@@ -4,7 +4,8 @@ This Android program can get the data from barcode and send it to a web server, 
 It uses Android-barcode API for client, PHP for front-end and server side processing, and  mariaDB for back-end tasks.
 
 
-## Before using, you need to:
+## Before using
+You need to:
 1. run a webserver with the PHP program.
 1. install the Android app.
 1. set a specific IP address of webserver that is running.
